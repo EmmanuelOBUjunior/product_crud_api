@@ -55,7 +55,7 @@ app.get('/api/product/:id', async(req, res)=>{
 
 app.delete('/api/product/:id', async(req,res)=>{
     try{
-
+        const {id} = req.params
     }catch(error){
         res.status(500).json({message: error.message})
     }
