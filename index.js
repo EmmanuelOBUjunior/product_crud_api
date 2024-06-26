@@ -13,10 +13,6 @@ app.get('/', (req, res)=>{
 
 app.use('/api/products', productRoutes)
 
-app.post('/api/products', async(req,res)=>{
-   
-})
-
 app.put('/api/products/:id', async(req,res)=>{
     try {
         const {id} = req.params
