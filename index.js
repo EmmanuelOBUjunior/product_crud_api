@@ -14,9 +14,6 @@ app.get('/', (req, res)=>{
 app.use('/api/products', productRoutes)
 
 
-app.delete('/api/products/:id', async(req,res)=>{
-})
-
 connect(process.env.MONGO_URI).then(() => {
     console.log("Connected to database")
     app.listen(3000, ()=> console.log("Server running on port 3000"))
