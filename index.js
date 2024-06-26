@@ -26,9 +26,6 @@ app.put('/api/products/:id', async(req,res)=>{
     }
 })
 
-app.get('/api/products', async(req, res)=>{
-    
-})
 
 app.get('/api/products/:id', async(req, res)=>{
     try {
