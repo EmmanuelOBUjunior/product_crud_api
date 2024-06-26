@@ -5,7 +5,7 @@ import 'dotenv/config'
 
 const app = express()
 app.use(json())
-app.use(express.urlencoded({extended:false}))
+app.use(urlencoded({extended:false}))
 
 app.get('/', (req, res)=>{
     res.send('Hello there')
