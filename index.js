@@ -27,10 +27,6 @@ app.put('/api/products/:id', async(req,res)=>{
 })
 
 
-app.get('/api/products/:id', async(req, res)=>{
-    
-})
-
 app.delete('/api/products/:id', async(req,res)=>{
     try{
         const {id} = req.params
