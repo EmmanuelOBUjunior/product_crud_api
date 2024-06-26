@@ -1,10 +1,11 @@
 import { connect } from 'mongoose'
-import express, { json } from 'express'
+import express, { json, urlencoded } from 'express'
 import Product from './models/product.model.js'
 import 'dotenv/config'
 
 const app = express()
 app.use(json())
+app.use(express.urlencoded({extended:false}))
 
 app.get('/', (req, res)=>{
     res.send('Hello there')
