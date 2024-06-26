@@ -19,6 +19,11 @@ app.post('/api/products', async(req,res)=>{
     }
 })
 
+app.get('/api/products', async(req, res)=>{
+    const products = await Product.find({})
+    res.status(200).json(products)
+})
+
 connect(process.env.MONGO_URI).then(() => {
     console.log("Connected to database")
     app.listen(3000, ()=> console.log("Server running on port 3000"))
