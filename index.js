@@ -1,7 +1,7 @@
 import { connect } from 'mongoose'
 import express, { json } from 'express'
 import Product from './models/product.model.js'
-require('dotenv').config()
+import 'dotenv/config'
 
 const app = express()
 app.use(json())
