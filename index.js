@@ -10,8 +10,7 @@ app.get('/', (req, res)=>{
 })
 
 app.post('/api/products', (req,res)=>{
-    console.log(req.body)
-    res.send(req.body)
+    
 })
 
 mongoose.connect(process.env.MONGO_URI).then(() => {
