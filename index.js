@@ -11,6 +11,8 @@ app.get('/', (req, res)=>{
     res.send('Hello there')
 })
 
+app.use('/api/products', productRoutes)
+
 app.post('/api/products', async(req,res)=>{
     try {
         const product = await Product.create(req.body)
