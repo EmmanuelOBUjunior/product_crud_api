@@ -7,8 +7,7 @@ app.get('/', (req, res)=>{
     res.send('Hello there')
 })
 
-
-
-app.listen(3000, ()=>{
-    console.log('Server is running on port 3000')
+mongoose.connect('mongodb+srv://obujunioremmanuel:JMRtooppjjDtQaYJ@backenddb.ftzfklg.mongodb.net/Product-API?retryWrites=true&w=majority&appName=backendDB').then(() => {
+    console.log("Connected to database")
+    app.listen(3000, ()=> console.log("Server running on port 3000"))
 })
