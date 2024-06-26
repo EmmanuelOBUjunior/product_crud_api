@@ -26,7 +26,7 @@ app.put('/api/product/:id', async(req,res)=>{
         if(!product) return res.status(404).json({message: "Product does not exist"})
         
         const updatedProduct = await Product.findById(id)
-        
+        res.status(200).json({message:"Product updated successfully", updatedProduct})
     } catch (error) {
         res.status(500).json({message: error.message})
     }
