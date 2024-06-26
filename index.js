@@ -10,4 +10,4 @@ app.get('/', (req, res)=>{
 mongoose.connect('mongodb+srv://obujunioremmanuel:JMRtooppjjDtQaYJ@backenddb.ftzfklg.mongodb.net/ProductAPI?retryWrites=true&w=majority&appName=backendDB').then(() => {
     console.log("Connected to database")
     app.listen(3000, ()=> console.log("Server running on port 3000"))
-}).catch(()=> console.log("Failed to connect to database"))
+}).catch((err)=> console.log("Failed to connect to database", err))
