@@ -1,6 +1,6 @@
 import { connect } from 'mongoose'
 import express, { json, urlencoded } from 'express'
-import productRoutes from './products.route.js'
+import productRoutes from './routes/products.route.js'
 import 'dotenv/config'
 
 const app = express()
