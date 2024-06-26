@@ -53,7 +53,13 @@ app.get('/api/product/:id', async(req, res)=>{
     }
 })
 
+app.delete('/api/product/:id', async(req,res)=>{
+    try{
 
+    }catch(error){
+        res.status(500).json({message: error.message})
+    }
+})
 
 connect(process.env.MONGO_URI).then(() => {
     console.log("Connected to database")
