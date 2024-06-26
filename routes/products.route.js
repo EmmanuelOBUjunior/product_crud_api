@@ -1,7 +1,8 @@
 import express from 'express'
-import { getProducts } from '../controllers/product.controller'
+import { getProducts, getProductById, createProduct } from '../controllers/product.controller'
 
 const router = express.Router()
 
 router.get('/', getProducts)
-router.get('/:id', getProductsById)
+router.get('/:id', getProductById)
+router.post('/', createProduct)
