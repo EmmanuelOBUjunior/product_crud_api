@@ -22,7 +22,7 @@ app.post('/api/products', async(req,res)=>{
     }
 })
 
-app.put('/api/product/:id', async(req,res)=>{
+app.put('/api/products/:id', async(req,res)=>{
     try {
         const {id} = req.params
         const product = await Product.findByIdAndUpdate(id, req.body)
@@ -44,7 +44,7 @@ app.get('/api/products', async(req, res)=>{
     }
 })
 
-app.get('/api/product/:id', async(req, res)=>{
+app.get('/api/products/:id', async(req, res)=>{
     try {
         const {id} = req.params
         const product = await Product.findById(id)
@@ -56,7 +56,7 @@ app.get('/api/product/:id', async(req, res)=>{
     }
 })
 
-app.delete('/api/product/:id', async(req,res)=>{
+app.delete('/api/products/:id', async(req,res)=>{
     try{
         const {id} = req.params
         const product = await Product.findByIdAndDelete(id)
