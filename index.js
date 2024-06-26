@@ -28,6 +28,15 @@ app.get('/api/products', async(req, res)=>{
     }
 })
 
+app.get('/api/product/:id', ()=>{
+    try {
+        
+    } catch (error) {
+        res.status(500).json({message:error.message})
+    }
+})
+
+
 connect(process.env.MONGO_URI).then(() => {
     console.log("Connected to database")
     app.listen(3000, ()=> console.log("Server running on port 3000"))
