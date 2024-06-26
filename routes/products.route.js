@@ -3,6 +3,7 @@ import { getProducts, getProductById, createProduct } from '../controllers/produ
 
 const router = express.Router()
 
+router.post('/', createProduct)
 router.get('/', getProducts)
 router.get('/:id', getProductById)
-router.post('/', createProduct)
+router.put('/:id', updateProduct)
