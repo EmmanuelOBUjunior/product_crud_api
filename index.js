@@ -13,10 +13,6 @@ app.get('/', (req, res)=>{
 
 app.use('/api/products', productRoutes)
 
-app.put('/api/products/:id', async(req,res)=>{
-    
-})
-
 
 app.delete('/api/products/:id', async(req,res)=>{
     try{
