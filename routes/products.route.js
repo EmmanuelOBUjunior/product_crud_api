@@ -7,3 +7,6 @@ router.post('/', createProduct)
 router.get('/', getProducts)
 router.get('/:id', getProductById)
 router.put('/:id', updateProduct)
+
+
+export default router
