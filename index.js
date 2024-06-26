@@ -1,6 +1,5 @@
 import { connect } from 'mongoose'
 import express, { json, urlencoded } from 'express'
-import Product from './models/product.model.js'
 import 'dotenv/config'
 
 const app = express()
