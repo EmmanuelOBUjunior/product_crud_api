@@ -28,7 +28,7 @@ app.get('/api/products', async(req, res)=>{
     }
 })
 
-app.get('/api/product/:id', ()=>{
+app.get('/api/product/:id', (req, res)=>{
     try {
         
     } catch (error) {
