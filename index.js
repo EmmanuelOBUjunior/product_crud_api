@@ -10,7 +10,7 @@ app.get('/', (req, res)=>{
     res.send('Hello there')
 })
 
-app.post('/api/products', (req,res)=>{
+app.post('/api/products', async(req,res)=>{
     const product = await Product
 })
 
