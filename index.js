@@ -10,7 +10,7 @@ app.get('/', (req, res)=>{
 })
 
 app.post('/api/products', (req,res)=>{
-    
+    const product = await Product
 })
 
 mongoose.connect(process.env.MONGO_URI).then(() => {
